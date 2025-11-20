@@ -16,8 +16,6 @@ def swap(x, y):
     y = x - y
     x = x - y
     
-    print("x: ", x, "y: ", y)
-    
     return x, y
 
 
@@ -26,11 +24,11 @@ def swap(x, y):
 # - "Apple", 10
 # - 9, 17
 
-print("Test1: swap('Apple', 10)")
-Swap("Apple", 10)
+result_1 = swap("Apple", 10)
+print(f"Input: Apple, 10, Results: {result_1}")
 
-print("Test2: swap(9, 17)")
-Swap(9 , 17)
+result_2 = swap(9, 7)
+print(f"Input: 9, 7, Results: {result_2}")
 
 
 
