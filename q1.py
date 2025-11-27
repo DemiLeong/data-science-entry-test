@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def swap(x, y):
     """
     Task 1
@@ -11,10 +12,10 @@ def swap(x, y):
     if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
         return -1
     
-    # swap
-    x = x + y
-    y = x - y
-    x = x - y
+    # swap x, y values
+    x = x + y   # sum the values of x + y and assign to x, e.g. 9+17=26
+    y = x - y   # take the new x value (total sum) minus y value and assign back to y, hence y now is having x initial value
+    x = x - y   # take the new x value (total sum) minus y value and assign back to x, hence x now is having y initial value
     
     return x, y
 
@@ -24,11 +25,12 @@ def swap(x, y):
 # - "Apple", 10
 # - 9, 17
 
-result_1 = swap("Apple", 10)
-print(f"Input: Apple, 10, Results: {result_1}")
+print("Test 1: 'Apple', 10")
+print(swap("Apple", 10), ' not all values numeric')
 
-result_2 = swap(9, 7)
-print(f"Input: 9, 7, Results: {result_2}")
+print("Test 2: 9, 17")
+print(swap(9 , 17), 'values swapped')
+
 
 
 
